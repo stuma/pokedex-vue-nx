@@ -1,0 +1,66 @@
+.main-container {
+    border:1px solid black;
+    background: white;
+    text-align: center;
+
+    .form-container {
+        border:1px solid black;
+        background: white;
+    }
+    .card-container{
+        .nameid-container{
+            display: flex;
+            justify-content: space-evenly;
+            border:1px solid black;
+            background: white;
+            .name-container{
+                border:1px solid black;
+                background: white;
+            }
+            .id-container{
+                border:1px solid black;
+                background: white;
+            }
+        }
+        .img-container{
+            .picture{
+                
+            }
+        }
+        .type-container{
+            display: flex;
+            justify-content: space-evenly;
+            border:1px solid black;
+            background: white;
+            .type1-container{
+                border:1px solid black;
+                background: white;
+            }
+        }
+        .base-exp-container{
+            border:1px solid black;
+            background: white;
+        }
+        .height-weight-container{
+            display: flex;
+            justify-content: space-evenly;
+            border:1px solid black;
+            background: white;
+
+            .height-container{
+                border:1px solid black;
+                background: white;
+            }
+            .weight-container{
+                border:1px solid black;
+                background: white;
+            }
+        }
+        .abilites-container{
+            border:1px solid black;
+            background: white;
+        }
+    }
+
+
+}
