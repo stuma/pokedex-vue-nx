@@ -2,41 +2,47 @@
     <div class="main-container"> 
         <div class="form-container">
             <form>
-                <input type="text" v-model="query" placeholder="Search Pokemon" autocomplete="off">
-                <button v-on:click="submit">Search</button>
+                <input class="input-container" type="text" v-model="query" placeholder="Search Pokemon" autocomplete="off">
+                <button class="btn-container" v-on:click="submit">Search</button>
             </form>
         </div>
         <div class="card-container">
             <div class="nameid-container">
                 <div class="name-container">
-                    <h1> {{ pokemon.name }} </h1>
+                    <div> {{ pokemon.name }} </div>
                 </div>
                 <div class="id-container">
-                    <h1>{{ pokemon.id }} </h1>
+                    <div v-if="pokemon.id">Nº {{ pokemon.id }} </div>
                 </div>
             </div>
             <div class="img-container">
                 <img imgSource class="picture" src="">
             </div>
-            <div class="type-container" v-for="type in pokemon.types" :key="type.slot">
-                <div class="type1-container">
-                    <h1>{{ type.type.name }}</h1>
-                </div>   
+            <div class="type-container">
+                <div v-for="type in pokemon.types" :key="type.slot">
+                    <div class="type1-container">
+                        <div>{{ type.type.name }}</div>
+                    </div>   
+                </div>
             </div>
             <div class="base-exp-container">
-                <h1> {{ pokemon.base_experience }} </h1>
+                <div v-if="pokemon.base_experience">Base experience</div>
+                <div v-if="pokemon.base_experience"> {{ pokemon.base_experience }} </div>
             </div>
             <div class="height-weight-container">
                 <div class="height-container">
-                    <h1> {{ pokemon.height }} </h1>
+                    <div v-if="pokemon.height">Height: {{ pokemon.height }}"</div>
                 </div>
                 <div class="weight-container">
-                    <h1> {{ pokemon.weight }} </h1>
+                    <div v-if="pokemon.weight">Weight: {{ pokemon.weight }} lbs</div>
                 </div>
             </div>
-            <div class="abilites-container" v-for="ability in pokemon.abilities" :key="ability.slot">    
-                <div class="ability1-container">
-                    <h1> {{ ability.ability.name }} </h1>   
+            <div class="abilites-container">
+                <div v-if="pokemon.abilities">Abilities</div>
+                <div v-for="ability in pokemon.abilities" :key="ability.slot">    
+                    <div class="ability1-container">
+                        <div> {{ ability.ability.name }} </div>   
+                    </div>
                 </div>    
             </div>
         </div>

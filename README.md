@@ -1,24 +1,14 @@
-# pokedex-vue-nx
+# pokedex-vue-nx - Challenge para la Academy Node JS de Naranja X
 
-## Project setup
+
+## Pasos para correr el proyecto de manera local
+### Instalación de dependencias
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilado y hot-reload para pruebas y desarrollo
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -7,12 +7,8 @@ export default {
         query: '',
         pokemon: {},
         imgSource: '',
-        pokemonPicture: {}
+        pokemonPicture: {},
     }),
-
-    created() {
-        // setear pokedex en ningun pokemon
-    },
     mounted() {
         this.pokemonPicture = document.querySelector('[imgSource]')
         this.imgSource = "https://www.kindpng.com/picc/b/363-3639827_pokemon-characters-png.png"
@@ -25,7 +21,6 @@ export default {
             PokedexService.get(this.query.toLowerCase())
             .then(response => {
                 this.setPokemon(response.data)
-                console.log(this.pokemon)
             })
             .catch(error => {
                 console.log(error)

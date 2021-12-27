@@ -1,64 +1,118 @@
 .main-container {
-    border:1px solid black;
-    background: white;
     text-align: center;
+    width: 350px;
+    margin: 20px auto;
 
     .form-container {
-        border:1px solid black;
-        background: white;
+        width: 100%;
+        padding: 10px;
+        font-family: 'Roboto Mono', monospace;
+        
+        .input-container {
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4px;
+            border: 1px dashed black;
+        }
+
+        .btn-container {
+            padding: 5px;
+            margin: 5px;
+            border-radius: 4px;
+            border: 1px dashed black;
+        }
+    }
+    .card-container::before {
+        content: '';
+        background-image: linear-gradient(grey, transparent);
+        background-color: black;
+        background-size: 3px 3px;
+        border-radius: 4px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: -1;
     }
     .card-container{
+        position: relative;
+        height: fit-content;
+        font-family: 'Roboto Mono', monospace;
+        max-width: 350px;
+        border-radius: 4px;
+        color: #000;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: #FFF;
+        border: 1px solid black;
+
         .nameid-container{
             display: flex;
             justify-content: space-evenly;
-            border:1px solid black;
-            background: white;
+            
             .name-container{
-                border:1px solid black;
-                background: white;
+
             }
+
             .id-container{
-                border:1px solid black;
-                background: white;
+                
             }
         }
         .img-container{
+            position: relative;
+            width: 180px;
+            margin: 10px auto;
+
             .picture{
-                
+                width: 180px;
+                border-radius: 50%;
             }
         }
         .type-container{
             display: flex;
             justify-content: space-evenly;
-            border:1px solid black;
-            background: white;
+            padding: 5px;
+            margin: 5px;
+
             .type1-container{
-                border:1px solid black;
-                background: white;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 4px;
+                border: 1px dashed black;
             }
         }
         .base-exp-container{
-            border:1px solid black;
-            background: white;
+            padding: 5px;
+            margin: 5px;
         }
+
         .height-weight-container{
             display: flex;
             justify-content: space-evenly;
-            border:1px solid black;
-            background: white;
+            padding: 5px;
+            margin: 5px;
 
             .height-container{
-                border:1px solid black;
-                background: white;
+                padding: 5px;
+                margin: 5px;
             }
             .weight-container{
-                border:1px solid black;
-                background: white;
+                padding: 5px;
+                margin: 5px;
             }
         }
         .abilites-container{
-            border:1px solid black;
-            background: white;
+            padding: 5px;
+            margin: 5px;
+            
+            .ability1-container {
+                border-radius: 4px;
+                border: 1px dashed black;
+                padding: 5px;
+                margin: 5px;
+            }
         }
     }
 
